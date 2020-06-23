@@ -4,6 +4,9 @@
   <head>
     <meta charset='UTF-8'/>
     <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <meta content='website' property='og:type'/>
+    <!--Imagen de Previsualizacion hace falta ajustar-->
+    <meta content='https://user-images.githubusercontent.com/32028541/85361831-8e3a1080-b4e2-11ea-9501-26b39bdbe3af.png' itemprop='image primaryImageOfPage' property='og:image'/>
     <b:include data='blog' name='all-head-content'/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'/>
     <link href='//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'/>
@@ -98,7 +101,16 @@ License        : This template is free for both personal and commercial use, But
       <div class='row'>
         <div class='col-sm-12 col-md-3 col-lg-3' id='sidebar'>
           <b:section class='header-section' id='header-section' maxwidgets='1' showaddelement='no'>
-            <b:widget id='Header1' locked='true' title='Rareti (Header)' type='Header' version='1' visible='true'>
+            <b:widget id='Header1' locked='true' title='Mialcosoft Developers (cabecera)' type='Header' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'/>
+                <b:widget-setting name='displayHeight'>0</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+                <b:widget-setting name='useImage'>false</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+                <b:widget-setting name='displayWidth'>0</b:widget-setting>
+              </b:widget-settings>
               <b:includable id='main'>
                 <b:if cond='data:useImage'>
                   <b:if cond='data:imagePlacement == &quot;REPLACE&quot;'>
@@ -163,24 +175,19 @@ user is not using shrink to fit then we expand the header.
  Happy blogging from BTemplates.com :)
 -->
 <div class='sosial'>
-            <a class='fa fa-2x fa-facebook' href='#'>
+            <a class='fa fa-2x fa-facebook' href='https://www.facebook.com/Mialcosoft/' target='_blank'>
               <span class='sr-only'>
                 facebook
               </span>
             </a>
-            <a class='fa fa-2x fa-twitter' href='#'>
+            <a class='fa fa-2x fa-twitter' href='https://twitter.com/macorreag' target='_blank'>
               <span class='sr-only'>
                 twitter
               </span>
             </a>
-            <a class='fa fa-2x fa-github' href='#'>
+            <a class='fa fa-2x fa-github' href='https://github.com/macorreag' target='_blank'>
               <span class='sr-only'>
                 github
-              </span>
-            </a>
-            <a class='fa fa-2x fa-google-plus' href='#'>
-              <span class='sr-only'>
-                google plus
               </span>
             </a>
           </div>
@@ -195,7 +202,11 @@ user is not using shrink to fit then we expand the header.
           <div class='collapse navbar-collapse'>
             <div class='menu-testing-menu-container' id='primary-menu'>
               <b:section class='top-menutop' id='top-menutop' maxwidgets='1' showaddelement='no'>
-                <b:widget id='PageList8' locked='false' title='Pages - Menu' type='PageList' version='1' visible='true'>
+                <b:widget id='PageList8' locked='false' title='Pages - Menu' type='PageList' version='1'>
+                  <b:widget-settings>
+                    <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'http://blog.mialcosoft.team/', 'title': 'Página principal', 'position': 0}, '2505191926381019648': {'href': 'http://blog.mialcosoft.team/p/trucos-de-programadores-y-disenadores.html', 'title': 'Trucos de Programadores y Diseñadores', 'position': 1}, '7251610097084426446': {'href': 'http://blog.mialcosoft.team/p/sistemas-intelgentes.html', 'title': 'Sistemas Inteligentes', 'position': 2}, '6359528763683322477': {'href': 'http://blog.mialcosoft.team/p/blog-page_12.html', 'title': 'Tips For Users', 'position': 3}, '9222015830019109855': {'href': 'http://blog.mialcosoft.team/p/curso-word-intermedio.html', 'title': 'Curso Word Intermedio', 'position': 4}, '4984580992813366754': {'href': 'http://blog.mialcosoft.team/p/blog-page.html', 'title': 'Back', 'position': 5}}]]></b:widget-setting>
+                    <b:widget-setting name='homeTitle'>Página principal</b:widget-setting>
+                  </b:widget-settings>
                   <b:includable id='main'>
                     <b:if cond='data:title'>
                       <!--<h2><data:title/></h2>-->
@@ -226,14 +237,11 @@ user is not using shrink to fit then we expand the header.
             </div>
           </div>
           <b:section class='sidebar-left' id='sidebar-left' preferred='yes'>
-            <b:widget id='Attribution1' locked='true' title='' type='Attribution' visible='true'>
+            <b:widget id='Attribution1' locked='true' title='' type='Attribution'>
+              <b:widget-settings>
+                <b:widget-setting name='copyright'/>
+              </b:widget-settings>
               <b:includable id='main'>
-    <b:if cond='data:feedbackSurveyLink'>
-      <div class='mobile-survey-link' style='text-align: center;'>
-        <data:feedbackSurveyLink/>
-      </div>
-    </b:if>
-
     <div class='widget-content' style='text-align: center;'>
       <b:if cond='data:attribution != &quot;&quot;'>
        <data:attribution/>
@@ -267,7 +275,30 @@ user is not using shrink to fit then we expand the header.
         </div>
         <div class='col-sm-12 col-md-9 col-md-offset-3 col-lg-6 col-lg-offset-3 col-content'>
           <b:section class='main-blog-section' id='main-blog-section' showaddelement='no'>
-            <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1' visible='true'>
+            <b:widget id='Blog1' locked='true' title='Entradas del blog' type='Blog' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+                <b:widget-setting name='style.textcolor'>#c0af94</b:widget-setting>
+                <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+                <b:widget-setting name='authorLabel'>By</b:widget-setting>
+                <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+                <b:widget-setting name='style.urlcolor'>#c0af94</b:widget-setting>
+                <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+                <b:widget-setting name='style.linkcolor'>#c0af94</b:widget-setting>
+                <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                <b:widget-setting name='style.bgcolor'>#000000</b:widget-setting>
+                <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                <b:widget-setting name='showLabels'>true</b:widget-setting>
+                <b:widget-setting name='showLocation'>true</b:widget-setting>
+                <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+                <b:widget-setting name='postsPerAd'>3</b:widget-setting>
+                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+                <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
+                <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+                <b:widget-setting name='showReactions'>false</b:widget-setting>
+              </b:widget-settings>
               <b:includable id='main' var='top'>
                 <b:if cond='data:mobile == &quot;false&quot;'>
                   <!-- posts -->
@@ -1471,7 +1502,13 @@ user is not using shrink to fit then we expand the header.
         </div>
         <div class='col-sm-12 col-md-9 col-md-offset-3 col-lg-3 col-lg-offset-0' id='sidebar-rightedt'>
           <b:section class='sidebar-right' id='sidebar-right' preferred='yes'>
-            <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1' visible='true'>
+            <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='numItemsToShow'>5</b:widget-setting>
+                <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+                <b:widget-setting name='showSnippets'>true</b:widget-setting>
+                <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+              </b:widget-settings>
               <b:includable id='main'>
                 <b:if cond='data:title'>
                   <h3>
@@ -1546,7 +1583,7 @@ user is not using shrink to fit then we expand the header.
                 </div>
               </b:includable>
             </b:widget>
-            <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
+            <b:widget id='HTML1' locked='false' title='' type='HTML'>
               <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -1559,7 +1596,7 @@ user is not using shrink to fit then we expand the header.
   <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='HTML2' locked='false' title='' type='HTML' visible='true'>
+            <b:widget id='HTML2' locked='false' title='' type='HTML'>
               <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -1572,7 +1609,14 @@ user is not using shrink to fit then we expand the header.
   <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='Label1' locked='false' title='Categories' type='Label' version='1' visible='true'>
+            <b:widget id='Label1' locked='false' title='Categories' type='Label' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+                <b:widget-setting name='display'>CLOUD</b:widget-setting>
+                <b:widget-setting name='selectedLabelsList'/>
+                <b:widget-setting name='showType'>ALL</b:widget-setting>
+                <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+              </b:widget-settings>
               <b:includable id='main'>
                 <b:if cond='data:title'>
                   <h3>
@@ -1629,7 +1673,13 @@ user is not using shrink to fit then we expand the header.
                 </div>
               </b:includable>
             </b:widget>
-            <b:widget id='HTML3' locked='false' title='BTemplates.com' type='HTML' visible='true'>
+            <b:widget id='HTML3' locked='false' title='BTemplates.com' type='HTML'>
+              <b:widget-settings>
+                <b:widget-setting name='content'>&lt;p&gt;
+Hello! We&#8217;re Fenix
+Creative Photo Studio
+&lt;/p&gt;</b:widget-setting>
+              </b:widget-settings>
               <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -1642,7 +1692,18 @@ user is not using shrink to fit then we expand the header.
   <b:include name='quickedit'/>
 </b:includable>
             </b:widget>
-            <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive' version='1' visible='true'>
+            <b:widget id='BlogArchive1' locked='false' title='Entradas pasadas' type='BlogArchive' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='showStyle'>HIERARCHY</b:widget-setting>
+                <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+                <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+                <b:widget-setting name='monthPattern'>MMMM</b:widget-setting>
+                <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+                <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+                <b:widget-setting name='chronological'>false</b:widget-setting>
+                <b:widget-setting name='showPosts'>true</b:widget-setting>
+                <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+              </b:widget-settings>
               <b:includable id='main'>
                 <b:if cond='data:title'>
                   <h3>
@@ -1789,16 +1850,8 @@ user is not using shrink to fit then we expand the header.
         </footer>
       </div>
     </div>
-    <script type='text/javascript'>
-      //<![CDATA[
-      /*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-      +function(a){"use strict";var b=function(c,d){this.$element=a(c),this.options=a.extend({},b.DEFAULTS,d),this.transitioning=null,this.options.parent&&(this.$parent=a(this.options.parent)),this.options.toggle&&this.toggle()};b.DEFAULTS={toggle:!0},b.prototype.dimension=function(){var a=this.$element.hasClass("width");return a?"width":"height"},b.prototype.show=function(){if(this.transitioning||this.$element.hasClass("in"))return;var b=a.Event("show.bs.collapse");this.$element.trigger(b);if(b.isDefaultPrevented())return;var c=this.$parent&&this.$parent.find("> .panel > .in");if(c&&c.length){var d=c.data("bs.collapse");if(d&&d.transitioning)return;c.collapse("hide"),d||c.data("bs.collapse",null)}var e=this.dimension();this.$element.removeClass("collapse").addClass("collapsing")[e](0),this.transitioning=1;var f=function(){this.$element.removeClass("collapsing").addClass("collapse in")[e]("auto"),this.transitioning=0,this.$element.trigger("shown.bs.collapse")};if(!a.support.transition)return f.call(this);var g=a.camelCase(["scroll",e].join("-"));this.$element.one(a.support.transition.end,a.proxy(f,this)).emulateTransitionEnd(350)[e](this.$element[0][g])},b.prototype.hide=function(){if(this.transitioning||!this.$element.hasClass("in"))return;var b=a.Event("hide.bs.collapse");this.$element.trigger(b);if(b.isDefaultPrevented())return;var c=this.dimension();this.$element[c](this.$element[c]())[0].offsetHeight,this.$element.addClass("collapsing").removeClass("collapse").removeClass("in"),this.transitioning=1;var d=function(){this.transitioning=0,this.$element.trigger("hidden.bs.collapse").removeClass("collapsing").addClass("collapse")};if(!a.support.transition)return d.call(this);this.$element[c](0).one(a.support.transition.end,a.proxy(d,this)).emulateTransitionEnd(350)},b.prototype.toggle=function(){this[this.$element.hasClass("in")?"hide":"show"]()};var c=a.fn.collapse;a.fn.collapse=function(c){return this.each(function(){var d=a(this),e=d.data("bs.collapse"),f=a.extend({},b.DEFAULTS,d.data(),typeof c=="object"&&c);!e&&f.toggle&&c=="show"&&(c=!c),e||d.data("bs.collapse",e=new b(this,f)),typeof c=="string"&&e[c]()})},a.fn.collapse.Constructor=b,a.fn.collapse.noConflict=function(){return a.fn.collapse=c,this},a(document).on("click.bs.collapse.data-api","[data-toggle=collapse]",function(b){var c=a(this),d,e=c.attr("data-target")||b.preventDefault()||(d=c.attr("href"))&&d.replace(/.*(?=#[^\s]+$)/,""),f=a(e),g=f.data("bs.collapse"),h=g?"toggle":c.data(),i=c.attr("data-parent"),j=i&&a(i);if(!g||!g.transitioning)j&&j.find('[data-toggle=collapse][data-parent="'+i+'"]').not(c).addClass("collapsed"),c[f.hasClass("in")?"addClass":"removeClass"]("collapsed");f.collapse(h)})}(jQuery),+function(a){function b(){var a=document.createElement("bootstrap"),b={WebkitTransition:"webkitTransitionEnd",MozTransition:"transitionend",OTransition:"oTransitionEnd otransitionend",transition:"transitionend"};for(var c in b)if(a.style[c]!==undefined)return{end:b[c]};return!1}"use strict",a.fn.emulateTransitionEnd=function(b){var c=!1,d=this;a(this).one(a.support.transition.end,function(){c=!0});var e=function(){c||a(d).trigger(a.support.transition.end)};return setTimeout(e,b),this},a(function(){a.support.transition=b()})}(jQuery)
-      //]]>
-    </script>
+<!-- Latest compiled and minified JavaScript -->
+<script crossorigin='anonymous' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'/>
     <script type='text/javascript'>
       //<![CDATA[
       (eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(2($){"C u";$(2(){$(\'#k-4 .4-w-11-I\').x(2(){$(\'a:K\',1).13(\'<i f="3 3-9-6"></i>\')});$(\'#k-4 e i\').S(\'5\',2(a){a.12();p b=$(1).j(\'e\').d(\'O\');$(\'#\'+b).l(\'m-n\');o($(1).v(\'3-9-6\')){$(\'#\'+b+\' .g-4\').q();$(1).d(\'f\',\'3 3-y-6\')}z{$(\'#\'+b+\' .g-4\').A();$(1).d(\'f\',\'3 3-9-6\');$(1).j(\'e\').B(\'m-n\')}});$(\'#7-D\').5(2(){$(1).E();$(\'#7-F\').q()});$(\'.7-G\').5(2(){$(1).H(\'\')});$(\'a[r="#J"]\').5(2(){$(\'8, L\').M({N:0},\'P\');Q R});p c=$(\'.T-U\').8();$(\'.V\').8(c);$(\'#W-X .Y:Z\').l(\'10\')});o($(\'#s\').t(\'.h\').14().15()!="16"||$(\'#s\').t(\'.h\').17==0){18.19.r=\'1a://1b.1c.1d/\'}}(1e));',62,77,'|this|function|fa|menu|click|circle|search|html|plus||||attr|li|class|sub|copyright||closest|primary|addClass|nav|clicked|if|var|slideDown|href|copy|find|strict|hasClass|item|each|minus|else|slideUp|removeClass|use|btn|hide|holder|field|val|children|top|first|body|animate|scrollTop|id|slow|return|false|on|site|description|siteintro|sidebar|right|widget|even|zebra|has|preventDefault|append|text|trim|Widiyanata|length|window|location|http|www|widiyanata|com|jQuery'.split('|'),0,{}))
