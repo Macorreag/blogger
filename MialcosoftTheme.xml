@@ -1852,17 +1852,7 @@ Creative Photo Studio
     </div>
 <!-- Latest compiled and minified JavaScript -->
 <script crossorigin='anonymous' integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa' src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'/>
-    <script type='text/javascript'>
-      //<![CDATA[
-      (eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(2($){"C u";$(2(){$(\'#k-4 .4-w-11-I\').x(2(){$(\'a:K\',1).13(\'<i f="3 3-9-6"></i>\')});$(\'#k-4 e i\').S(\'5\',2(a){a.12();p b=$(1).j(\'e\').d(\'O\');$(\'#\'+b).l(\'m-n\');o($(1).v(\'3-9-6\')){$(\'#\'+b+\' .g-4\').q();$(1).d(\'f\',\'3 3-y-6\')}z{$(\'#\'+b+\' .g-4\').A();$(1).d(\'f\',\'3 3-9-6\');$(1).j(\'e\').B(\'m-n\')}});$(\'#7-D\').5(2(){$(1).E();$(\'#7-F\').q()});$(\'.7-G\').5(2(){$(1).H(\'\')});$(\'a[r="#J"]\').5(2(){$(\'8, L\').M({N:0},\'P\');Q R});p c=$(\'.T-U\').8();$(\'.V\').8(c);$(\'#W-X .Y:Z\').l(\'10\')});o($(\'#s\').t(\'.h\').14().15()!="16"||$(\'#s\').t(\'.h\').17==0){18.19.r=\'1a://1b.1c.1d/\'}}(1e));',62,77,'|this|function|fa|menu|click|circle|search|html|plus||||attr|li|class|sub|copyright||closest|primary|addClass|nav|clicked|if|var|slideDown|href|copy|find|strict|hasClass|item|each|minus|else|slideUp|removeClass|use|btn|hide|holder|field|val|children|top|first|body|animate|scrollTop|id|slow|return|false|on|site|description|siteintro|sidebar|right|widget|even|zebra|has|preventDefault|append|text|trim|Widiyanata|length|window|location|http|www|widiyanata|com|jQuery'.split('|'),0,{}))
-      //]]>
-    </script>
 
-<script type='text/javascript'>
-      //<![CDATA[
-eval(function(p,a,c,k,e,r){e=String;if(!''.replace(/^/,String)){while(c--)r[c]=k[c]||c;k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(\'.0\').1(\'2\',\'3://4.5.6/\')',7,7,'copyright|attr|href|http|www|widiyanata|com'.split('|'),0,{}))
- //]]>
-    </script>
   </body>
 </html><!-- Template processed by BTemplates.com on 01-08-2016 23:04.
 Log: Images uploaded to Picasa
